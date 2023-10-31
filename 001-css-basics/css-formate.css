@@ -1,0 +1,41 @@
+.roter-text {
+    color: red;
+}
+
+.blauer-hintergrund {
+    background-color: lightskyblue;
+}
+
+#headline1 {
+    text-decoration: line-through;
+}
+
+#headline2 {
+    letter-spacing: 0.25em;
+}
+body {
+    background-color: rgba(128, 128, 128, 0.274);
+    margin: 40px;
+}
+
+/* Tag Selektor */
+li {
+    padding: 5px;
+    border-left: 10 px solid green;
+}
+ /* Class Selektor */
+.list-element {
+    border-left: 3 px solid blue;
+}
+
+/* ID selector */
+#list-element-1 {
+    border-left: 50px solid deeppink;
+}
+
+/* ab einer mindestbreite von 400 Pixel wird die Farbe geändert */
+@media (min-width: 400px ) {
+    body {
+        background: orange;
+    }
+}

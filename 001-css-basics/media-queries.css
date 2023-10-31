@@ -1,0 +1,25 @@
+.article-1 {
+    color: aqua;
+    font-family: "Times New Roman", Times, serif;
+    background-color: brown;
+}
+.article-2 {
+    color: blueviolet;
+    background-color: blanchedalmond;
+}
+.article-3 {
+    color: chocolate;
+    background-color: chartreuse;
+}
+.one-block {
+    background-color: aquamarine;
+    border: 10px dotted rgb(36, 36, 192);
+}
+.two-block {
+    background-color: blanchedalmond;
+    border: 10px dashed red;
+}
+.three-block {
+    background-color: brown;
+    border: 10px dotted blue;
+}
