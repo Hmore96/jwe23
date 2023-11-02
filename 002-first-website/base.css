@@ -1,0 +1,92 @@
+@font-face {
+    font-family: Lato; /* lato-regular - latin */
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato; /* lato-regular - latin */
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: bold;
+    src: url(fonts/Lato-Bold.ttf);
+}
+
+html {
+    font-family: Lato;
+}
+
+h1 {
+    margin: 0px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    z-index: 10;
+}
+#subtitle {
+    font-size: 25px;
+    margin-top: 0px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    z-index: 10;
+}
+
+#main-header {
+    background-image: url(img/pexels-the-cactusena-18937041.jpg);
+    height: 25 px;
+    overflow: hidden;
+    height: 500px;
+    background-size: auto 400%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* opacity: 0.58; */
+
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    position: relative;
+}
+
+body {
+    margin: 0;
+}
+#lighter {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.58);
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 0;
+}
+
+#main-header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.58);
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 0;
+}
+.logo {
+    position: absolute;
+    align-self: top;
+    object-position: left top;
+    object-fit: none;
+}
+   
+
+   
+
+
+
+
