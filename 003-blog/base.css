@@ -1,0 +1,152 @@
+@font-face {
+    font-family: lato;
+    src: url(fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: lato;
+    src: url(fonts/Lato-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: lato;
+    src: url(fonts/Lato-Black.ttf);
+    font-weight: 900;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+}
+
+html * {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors: */
+    --grey: #969696;
+    --light-grey: #dddddd;
+    --red: #e74149;
+    --h-space: 25px;
+}
+
+#main-header {
+    background-image: url(img/blog-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* 75vh sind 75% der verfügbaren Viewport Höhe */
+    min-height: 75vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.h-spacing {
+    padding-left: var(--h-space);
+    padding-right: var(--h-space);
+}
+
+/* nur .container Klassen innerhalb des #main-header */
+#main-header .container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0;
+}
+
+#main-header .container:last-child {
+    flex-flow: column;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+button.cta {
+    background-color: var(--red);
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+}
+a {
+    color: var(--red);
+}
+
+h3 {
+    font-weight: 900;
+    color: var(--red);
+    font-size: 18px;
+}
+
+.teaser {
+    padding-left: var(--h-space);
+    padding-right: var(--h-space);
+}
+
+.inner-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section {
+    background-color: var(--light-grey);
+}
+.flex {
+    display: flex;
+}
+.teaser img {
+    width: 100%;
+}
+
+#main-footer {
+    background-color: var(--light-grey);
+}
+
+#footer-logo {
+    display: none;
+}
+
+#main-footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main-footer nav ul li {
+    flex-basis: 50%;
+}
+
+a {
+    color: var(--red);
+}
+
+#main-footer a {
+    color: inherit;
+}
+#copyright {
+    font-size: 0.8em;
+    color: var(--grey);
+    text-align: center;
+}
+#
+/* CSS Code für Viewports größer/gleich 768px */
+
+@media (min-width: 768px) {
+    .flex {
+        display: flex;
+        gap: 10px;
+    }
+    #main-footer .inner-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* CSS Code für Viewports größer/gleich 1200px */
+}
